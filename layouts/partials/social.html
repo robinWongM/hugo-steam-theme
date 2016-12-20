@@ -1,4 +1,7 @@
 <section class="footer-social">
+      {{ with .Site.Params.weibo }}
+      <a href="//weibo.com/{{ . }}" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-weibo"></i> <span class="hidden">Weibo</span></a>&nbsp;
+      {{ end }}
       {{ with .Site.Params.twitter }}
       <a href="//twitter.com/{{ . }}" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
       {{ end }}
